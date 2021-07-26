@@ -11,11 +11,12 @@ const Stack = createStackNavigator();
 function HomeNavigation() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerStyle:{borderWidth:10, backgroundColor: 'tomato' }}}>
         <Stack.Screen 
           name="HomeScreen" 
-          options={{title:'PokeAPI', headerRight:()=> (<UseColorMode/>), 
-          headerStyle: {backgroundColor: colorMode === 'dark' ? 'black' : 'white'} }} 
+          options={{title:'PokeAPI', headerTintColor: colorMode === 'dark' ? 'white' : 'black',
+          headerRight:()=> (<UseColorMode/>), 
+          headerStyle: {backgroundColor: colorMode === 'dark' ? 'black' : 'white',shadowRadius: 0, shadowOffset:{height: 0}} }} 
           component={HomeScreen}
         />
       </Stack.Navigator>
