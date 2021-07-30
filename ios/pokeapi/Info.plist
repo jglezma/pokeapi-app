@@ -63,16 +63,6 @@
 		<string>Roboto.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
-		<string>BoschSans-Black.ttf</string>
-		<string>BoschSans-BlackItalic.ttf</string>
-		<string>BoschSans-Bold.ttf</string>
-		<string>BoschSans-BoldItalic.ttf</string>
-		<string>BoschSans-Light.ttf</string>
-		<string>BoschSans-LightItalic.ttf</string>
-		<string>BoschSans-Medium.ttf</string>
-		<string>BoschSans-MediumItalic.ttf</string>
-		<string>BoschSans-Regular.ttf</string>
-		<string>BoschSans-RegularItalic.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
