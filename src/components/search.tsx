@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, Input, Button, IconButton, Icon, Text, NativeBaseProvider, Center, Box } from "native-base";
+import { VStack, Input, Icon } from "native-base";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
