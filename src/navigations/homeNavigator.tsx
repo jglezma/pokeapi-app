@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/home';
 import PokemonDetailScreen from '../screens/pokemonDetail';
 import TypeScreen from '../screens/type';
+import AbilitiesScreen from '../screens/abilities';
 import UseColorMode from '../components/colorMode';
 import {
   useColorMode
@@ -12,6 +13,7 @@ export type HomeListStackParamsList = {
   HomeScreen: undefined;
   PokemonDetailScreen: {url:any};
   TypeScreen: {url:any};
+  AbilitiesScreen: {url:any};
 };
 const Stack = createStackNavigator<HomeListStackParamsList>();
 
@@ -39,6 +41,13 @@ function HomeNavigation() {
           headerRight:()=> (<UseColorMode/>), 
           headerStyle: {backgroundColor: colorMode === 'dark' ? 'black' : 'white',shadowRadius: 0, shadowOffset:{height: 0}} }} 
           component={TypeScreen}
+        />
+        <Stack.Screen 
+          name="AbilitiesScreen" 
+          options={{title:'Abilities', headerTintColor: colorMode === 'dark' ? 'white' : 'black',
+          headerRight:()=> (<UseColorMode/>), 
+          headerStyle: {backgroundColor: colorMode === 'dark' ? 'black' : 'white',shadowRadius: 0, shadowOffset:{height: 0}} }} 
+          component={AbilitiesScreen}
         />
       </Stack.Navigator>
   );

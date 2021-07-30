@@ -5,7 +5,7 @@ import { abilitiesState } from '../types/state/AbilitiesState';
 /**
  * Alert state reducer.
  */
-export function typeReducer(
+export function AbilitiesReducer(
   state: abilitiesState = abilitiesStore,
   action: AbilitiesAction,
 ): abilitiesState {

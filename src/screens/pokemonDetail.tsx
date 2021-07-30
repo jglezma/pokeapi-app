@@ -75,7 +75,9 @@ function PokemonDetailScreen({ navigation, route }: Props) {
         style={styles.alignleft}
         renderItem={({ item }) => (
           <View style={styles.horizontal}>
-            <Text>{item.ability.name}</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('AbilitiesScreen', {url: item.ability.url })}>
+              <Text style={styles.link}>{item.ability.name}</Text>
+            </TouchableOpacity>
           </View>
         )}
         keyExtractor={(item) => item.url}
