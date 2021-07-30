@@ -16,7 +16,7 @@ function PokemonItem(item: any) {
         style={styles.box}
     >
         <Image alt="Sin imagen por el momento." source={{uri:api.images+item.url.slice(34, -1)+'.png'}} size="xl" />
-        <Text>{item.name}</Text>
+        <Text style={styles.text}>{item.name}</Text>
     </Box>
   );
 }
@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 10,
     borderColor:'#a1a1aa'
+  },
+  text:{
+    alignSelf:'center',
+    color: 'white',
+    fontSize:20
   }
 });
 export default PokemonItem;

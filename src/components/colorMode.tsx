@@ -12,7 +12,6 @@ export default function UseColorMode() {
   return (
     <Center bg={colorMode === 'dark' ? 'black' : 'white'}>
       <Icon size='sm' ml={5} mx={4} as={<Ionicons name="contrast" onPress={toggleColorMode}/>} />
-      
     </Center>
   );
 }
